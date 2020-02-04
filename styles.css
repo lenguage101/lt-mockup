@@ -1,0 +1,452 @@
+html, body {
+    margin: 0 
+}
+/***General***/
+p.description {
+    line-height: 1.5em;
+    font-size: .5em;
+    margin: 0 5%;
+}
+
+form {
+    padding-top: 30px;
+}
+
+input[type="submit"] {
+    background: #00829c;
+    border: 0;
+    color: #fff;
+    padding: 10px 70px;
+    border-radius: 20px;
+    transition: .75s all ease;
+    outline: none;
+}
+
+input:hover[type="submit"] {
+    cursor: pointer;
+    background: #6aaeb7;
+    color: #fff;
+}
+
+hr {
+    height: 5px;
+    width: 85%;
+    float: left;
+    margin-left: 5%;
+    border: none;
+    background: #b0b0b0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/***General***/
+
+/***Classes***/
+.upperContentSectionBackground {
+   padding: 40px 8%;
+}
+
+.topUpperContentTitle{
+    padding-top: 35px;
+}
+
+.thinTitle, .emphasis {
+    font-size: 2.5em;   
+    color: #6aaeb7;
+    padding-right: 7px;
+}
+
+.emphasis {
+    font-weight: 700;
+}
+
+.upperContentImg {
+    height: 400px;
+    padding-top: 20px;
+}
+/***Classes***/
+
+/*** Start of div#upperContent ***/
+#upperContent {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**  div#topUpperContent **/
+#topUpperContent {
+    background: #ffffff;
+    position: relative;
+    top: -15px;
+    z-index: -100;
+}
+
+#modelHoldingProduct {
+    background: #6aaeb7;
+    padding-top: 30px;
+}
+
+#model {
+    width: 150px;
+    position: relative;
+    left: 15%;
+}
+
+#lashOutInfo {
+    background: #ffffff;
+    position: relative;
+    bottom: 125px;
+}
+
+/** div#middleUpperContent **/
+#secondUpperContent {
+    background: #fafafa;
+    padding: 50px 0;
+}
+
+/** div#bottomUpperContent **/
+#bottomUpperContent {
+    margin-top: 70px;
+    background: #ffffff;
+}
+
+#goAhead{
+    display: block;
+}
+
+input[type="submit"].learnMore {
+    padding: 12px 90px;
+}
+/*** End of div#upperContent ***/
+
+/*** Start of div#lowerContent ***/
+#lowerContent {
+    padding-bottom: 100px;
+}
+
+/**div#bestSellers2019**/
+#bestSellers2019{
+    margin: 0 5%;
+    padding-top: 20px;
+}
+
+#bestSellers2019Description{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 40px;
+    font-size: .5em;
+}
+
+/**div#gallery**/
+#gallery {
+    text-align: center;
+}
+
+#gallery > .card {
+    background: #fafafa;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.productInfo {
+    text-align: left;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+.productTitle {
+    font-size: 2em;
+    font-weight: 700;
+    display: inline;
+}
+
+.productDescription {
+    line-height: 0;
+}
+/*Images*/ 
+.productImg {
+    width: 85%;
+}
+
+#neuBrow {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#neuReflection {
+    padding-top: 40px;
+}
+
+input[type="submit"].productButton {
+    width: 90%;
+    padding: 15px 0;
+}
+/*** End of div#lowerContent ***/
+
+/*** Media Queries***/
+@media screen and (min-width: 480px) and (max-width: 630px) {
+    p.description {
+        font-size: .75em
+    }
+
+    #bestSellers2019Description {
+        font-size: .75em;
+    }
+
+    #model {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    p.description {
+        font-size: 1em;
+        margin: 0 5%;
+    }
+
+    #bestSellers2019Description {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 630px) and (max-width: 700px) {
+    #model {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1368px) {
+    #model {
+        width: 450px;
+    }
+    
+    #lashOutInfo {
+        position: relative;
+        bottom: 200px;
+    }
+
+    #firstUpperContent {
+        margin-bottom: -125px;
+    }
+}
+
+@media screen and (min-width: 1368px) {
+    /***General***/
+    .topUpperContentTitle {
+        padding-top: 0;
+    }
+
+    p.description {
+        margin: 0px;
+        line-height: 1.5em;
+    }
+    /*** General ***/
+
+    /*** div#topUpperContent ***/
+    /** div#firstUpperContent **/
+    #firstUpperContent {
+        background: #6aaeb7;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 12.5%;
+    }
+    
+    #topUpperContent {
+        top: 0;
+    }
+    
+    #modelHoldingProduct {
+        width: 50%;
+        text-align: right;
+        padding-top: 0;
+        position: relative;
+        top: -35px;
+    }
+    
+    #model {
+        position: static;
+        left: 0;
+        text-align: right;
+        width: 650px;
+    }
+
+    #lashOutInfo {
+        background: none;
+        position: static;
+        bottom: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        width: 50%;
+    }
+
+    #lashOutTitleSpan, #loudTitleSpan, #lashOutDescription {
+        color: #ffffff;
+    }
+    
+    /** div#firstUpperContent **/
+
+    /** div#secondUpperContent **/
+    #secondUpperContent {
+        display: flex;
+        background: #fafafa;
+        padding: 100px 12.5%;
+        position: relative;
+        bottom: 230px;
+    }
+
+    #bottomUpperContent {
+        margin-top: -200px;
+        display: flex;
+        padding: 50px 12.5% 100px 12.5%;
+    }
+
+    #laughing {
+        width: 40%;
+        text-align: left;
+    }
+
+    #laughOutLoud {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /** div#secondUpperContent **/
+    
+    /*** div#topUpperConent ***/
+    /*** div#bottomUpperContent ***/
+    #goAhead {
+        display: inline;
+    }
+
+    #bestSellers2019 {
+        margin: 0;
+        padding: 0 12.5%  50px 12.5%;
+    }
+    
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 12.5%;
+        justify-content: flex-start;
+    }
+
+    #gallery > .card {
+        background: #fafafa;
+        width: 40%;
+        margin: 0 5% 30px 0;
+        padding: 0 20px 40px 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    /*** div#bottomUpperContent ***/
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1700px) {
+    .upperContentImg {
+        height: 500px;
+        padding-top: 0;
+    }
+
+    #model {
+        width: 550px;
+    }
+    
+    #secondUpperContent {
+        display: flex;
+        background: #fafafa;
+        padding: 0;
+        padding: 100px 12.5% 0 12.5%;
+    }
+    
+    #lashOutProduct {
+        width: 40%;
+        padding-left: 5%;
+        text-align: left;
+        position: relative;
+        bottom: 180px;
+    }
+    
+    #bombshellLashesInfo {
+        width: 60%;
+        text-align: left;
+        margin-right: 10%;
+    }
+   
+    #laughOutDescription {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .upperContentImg {
+        height: 600px;
+        padding-top: 0;
+    }
+
+    /*** div#secondUpperContent ***/
+    #secondUpperContent {
+        display: flex;
+        background: #fafafa;
+        padding: 150px 12.5% 0px 12.5%;
+        position: relative;
+        bottom: 270px;
+        margin-bottom: -375px;
+    }
+
+    #lashOutInfo {
+        position: relative;
+        top: 200px;
+    }
+
+    #lashOutProduct {
+        width: 20%;
+        padding-left: 5%;
+        text-align: left;
+        position: relative;
+        bottom: 220px;
+    }
+
+    #bombshellLashesInfo {
+        width: 60%;
+        margin: 0px 25% 0 20%;
+        text-align: left;
+    }
+    /*** div#secondUpperContent ***/
+    
+    #laughOutDescription {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    #gallery > .card {
+        width: 30%;
+        margin: 0 3% 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+}
+@media screen and (min-width: 2200px) {
+    #gallery > .card {
+        width: 21%;
+        margin: 0 1.5% 40px 0;
+    }
+}
+
+@media screen and (min-width: 2450px){
+    #laughOutLoud {
+        margin-left: -15%;
+    }
+}
